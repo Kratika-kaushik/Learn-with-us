@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Learn With Us</title>
+</head>
+<body>
+    <!--start modal box for registration nd login form with only html and css-->
+    <input type="checkbox" id="registration" style="display:none">
+    <form action="learn.html" id="register">
+        <label for="registration" id="close">&times;</label><!--for closing the modal box(cross sign)-->
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Your Name">
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Your E-mail address">
+        <label for="login">Login Name:</label>
+        <input type="text" placeholder="Choose a Login name">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Choose a Password">
+        <label for="password">Confirm Password:</label>
+        <input type="password" placeholder="Confirm your Password">
+        <input type="submit" value="Register">
+
+    </form> 
+    <input type="checkbox" id="login" style="display: none">
+    <form action="learn.html" id="sign-in">
+        <label for="login" id="close">&times;</label>
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="Your E-mail address">
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Choose a Password">
+        <input type="submit" value="Login">
+    </form>
+    <!--end modal box-->
+    <!--Main wrapper-->
+    <div class="main-wrapper">
+        <!--Navigation-->
+        <input type="checkbox" id="menu"  style="display: none">
+        <label for="menu"><i class="fas fa-bars"></i></label>
+        <nav>
+            <ul class="nav1">
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li id="drop"><a href="#">Services</a>
+                   <ul id="dropdown">
+                    <li><a href="#">  Web Development  </a></li>
+                    <li><a href="#">Android Development</a></li>
+                    <li><a href="#">Backend Development</a></li>
+                    <li><a href="#">Wordpress</a></li>
+                    <li><a href="#">DSA</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="nav2">
+                <li><a href="#"><label for="login">Login</label></a></li>
+                <li><a href="#"><label for="registration">Registration</label></a></li>
+            </ul>
+        </nav>
+        <!--end of navigation-->
+        <!--start slideshow-->
+        <div class="slider">
+            <section>
+                <div class="slide">
+                    <img src="images/lap1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/lap4.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/lap5.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/lap10.jpg">
+                </div>
+                <div class="slide">
+                    <img src="images/lap6.jpg">
+                </div>
+            
+            </section>
+        </div>
+        <!--end slideshow-->
+        <!--start card section-->
+        <section class="card-section">
+            <div class="card">
+                <div class="back" id="back1">
+                    <h2>HTML5</h2>
+                    <p>Course Title:Learn HTML basics</p>
+                    <p>Price: Rs 500</p>
+                    <p>Instructor: Michael</p>
+                    <p>Course length:10 hours</p>
+                </div>
+                <div class="front" id="front1"></div>
+            </div>
+
+            <div class="card">
+                <div class="back" id="back2">
+                    <h2>CSS3</h2>
+                    <p>Course Title:Learn CSS basics</p>
+                    <p>Price: Rs 500</p>
+                    <p>Instructor: Rose</p>
+                    <p>Course length:15 hours</p>
+                </div>
+                <div class="front" id="front2"></div>
+            </div>
+
+            <div class="card">
+                <div class="back" id="back3">
+                    <h2>JS</h2>
+                    <p>Course Title:Learn Javascript basics</p>
+                    <p>Price: Rs 1000</p>
+                    <p>Instructor: David </p>
+                    <p>Course length:20 hours</p>
+                </div>
+                <div class="front" id="front3"></div>
+            </div>
+        </section>
+        <section class="card-section-2">
+            <div class="card">
+                <div class="back" id="back4">
+                    <h2>Java</h2>
+                    <p>Course Title:Java Basics with projects</p>
+                    <p>Price: Rs 1500</p>
+                    <p>Instructor: Michael</p>
+                    <p>Course length:20 hours</p>
+                </div>
+                <div class="front" id="front4"></div>
+            </div>
+
+            <div class="card">
+                <div class="back" id="back5">
+                    <h2>Python</h2>
+                    <p>Course Title:Learn Python basics</p>
+                    <p>Price: Rs 500</p>
+                    <p>Instructor: Rose</p>
+                    <p>Course length:5 hours</p>
+                </div>
+                <div class="front" id="front5"></div>
+            </div>
+
+            <div class="card">
+                <div class="back" id="back6">
+                    <h2>C++</h2>
+                    <p>Course Title:Learn C++ basics</p>
+                    <p>Price: Rs 500</p>
+                    <p>Instructor: David</p>
+                    <p>Course length:10 hours</p>
+                </div>
+                <div class="front" id="front6"></div>
+            </div>
+        </section>
+        <!--End card section-->
+        <!--Start developer section-->
+        <section class="dev-section">
+            <div class="container">
+                <img src="images/person2.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <h3>Michael</h3>
+                        <p>HTML CSS Bootstrap Java Spring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/person1.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <h3>Rose</h3>
+                        <p>HTML CSS Bootstrap Python Django</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="images/person4.jpg">
+                <div class="middle">
+                    <div class="text">
+                        <h3>David</h3>
+                        <p>HTML CSS Javascript C++</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end developer section-->
+        <!--start social media section-->
+        <section class="social-icons">
+            <ul>
+                <li><a href="#"><i class="fab fa-google-plus"><span>Google+</span></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"><span>Facebook</span></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"><span>Twitter</span></i></a></li>
+            </ul>
+        </section>
+        <!--end social media section-->
+        <footer>
+            <p>
+                Copyright &copy; 2021 xyz
+            </p>
+        </footer>
+    </div>
+   <!--End main wrapper--> 
+</body>
+</html>
